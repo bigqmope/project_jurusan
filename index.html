@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Program Studi Sistem Informasi - Universitas Tanjungpura">
+  <title>Sistem Informasi UNTAN</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- AOS Animation -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold d-flex align-items-center" href="#home">
+        <img src="assets/untan.png" alt=" " style="height: 40px; margin-right: 10px;">
+        <span>Sistem Informasi <span class="text-primary">UNTAN</span></span>
+      </a>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="profil.html">Profil</a></li>
+          <li class="nav-item"><a class="nav-link" href="akademik.html">Akademik</a></li>
+          <li class="nav-item"><a class="nav-link" href="fasilitas.html">Fasilitas</a></li>
+        </ul>
+
+        <!-- SEARCH -->
+        <form class="d-flex ms-lg-3 mt-3 mt-lg-0" id="searchForm">
+          <input id="searchInput" class="form-control form-control-sm me-2" type="search" placeholder="Cari..." required>
+          <button class="btn btn-sm btn-primary" type="submit"><i class="fas fa-search"></i></button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section id="home" class="hero-section">
+    <div class="container text-center text-white">
+      <h1 class="display-4 fw-bold mb-3" data-aos="fade-down">Selamat Datang di Program Studi Sistem Informasi</h1>
+      <p class="lead mb-4" data-aos="fade-up">Universitas Tanjungpura, Pontianak</p>
+      <p class="mb-4" data-aos="fade-up" data-aos-delay="100">Menghasilkan lulusan yang kompeten dan berdaya saing tinggi di bidang teknologi informasi</p>
+    </div>
+  </section>
+
+  <!-- PROFIL SINGKAT -->
+  <section id="sejarah" class="py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
+          <h2 class="mb-4">Profil Singkat</h2>
+          <p>
+            Program Studi Sistem Informasi Universitas Tanjungpura merupakan salah satu
+            program studi strata 1 (S-1) yang berada di Fakultas Matematika dan Ilmu 
+            Pengetahuan Alam (FMIPA). Fokus pendidikan dan pembelajaran pada Program Studi 
+            Sistem Informasi Universitas Tanjungpura pada bidang keahlian Manajemen Sistem 
+            Informasi, Intelejensi Bisnis, dan Pengembangan Perangkat Lunak.
+          </p>
+        </div>
+        <div class="col-lg-6 text-center" data-aos="fade-left">
+          <img src="assets/sejarah-index.png" alt="Profil Singkat Sisfo" class="img-fluid rounded shadow" style="max-height: 400px; width: 100%; object-fit: cover;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VISI MISI -->
+  <section id="visi-misi" class="py-5 bg-light">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0 order-lg-2" data-aos="fade-left">
+          <h2 class="mb-4">Visi & Misi</h2>
+          
+          <div class="mb-4">
+            <h5 class="text-primary mb-3"><i class="fas fa-eye"></i> Visi</h5>
+            <p>
+            Program Studi yang inovatif dan adaptif dalam mengembangkan keilmuan
+            dan mengelola sistem informasi guna mendukung transformasi digitalisasi
+            potensi kekayaan lokal.
+            </p>
+          </div>
+
+          <div>
+            <h5 class="text-primary mb-3"><i class="fas fa-bullseye"></i> Misi</h5>
+            <ul>
+              <li>Mengembangkan dan mengimplementasikan program pendidikan di bidang sistem informasi yang inovatif dengan menyesuaikan perkembangan zaman.</li>
+              <li>Melaksanakan penelitian dalam bidang sistem informasi yang berfokus pada lingkungan tropis dan mampu berkompetisi sacara nasional dan internasional.</li>
+              <li>Memberikan niai dan kontribusi berupa kegiatan pengabdian dalam inovasi di bidang Sistem Informasi kepada pemerintah, industri ,dan masyarakat.</li>
+              <li>Menjalin kemitraan dengan pemerintah industri maupun institus lainnya pada bidang sistem informasi untuk mendukung kegiatan Tridhatma Perguruan Tinggi.</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="col-lg-6 text-center order-lg-1" data-aos="fade-right">
+          <img src="assets/visi-misi-index.png" alt="Visi Misi SI UNTAN" class="img-fluid rounded shadow" style="max-height: 400px; width: 100%; object-fit: cover;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BERITA TERKINI -->
+  <section id="berita" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5" data-aos="fade-up">Berita Terkini</h2>
+      
+      <div class="row g-4">
+        <!-- Berita 1 - CLICKABLE -->
+        <div class="col-md-4" data-aos="fade-up">
+          <a href="detail-berita.html" class="text-decoration-none">
+            <div class="news-card card h-100 shadow-sm">
+              <img src="assets/berita-3.jpg" class="card-img-top" alt="Berita 1" style="height: 220px; object-fit: cover;">
+              <div class="card-body">
+                <span class="badge bg-primary mb-2">Kegiatan</span>
+                <h5 class="card-title">[SINTA 2 : KULIAH UMUM JURUSAN SISTEM INFORMASI]</h5>
+                <p class="card-text text-muted">Informasi lengkap dan pendaftarannya klik disini.</p>
+                <small class="text-muted"><i class="far fa-calendar"></i> 15 November 2025</small>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Berita 2 -->
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="news-card card h-100 shadow-sm">
+            <img src="assets/berita-1.jpg" class="card-img-top" alt="Berita 2" style="height: 220px; object-fit: cover;">
+            <div class="card-body">
+              <span class="badge bg-success mb-2">Kegiatan</span>
+              <h5 class="card-title">[SISFO BERPRESTASI]</h5>
+              <p class="card-text text-muted">Assalamualaikum warahmatullahi wabarakatuh, Shalom, Om Swastyastu, Namo Buddhaya, dan Salam Kebajikan!
+<br> <br>
+Hello Great People 👋🏻
+<br>
+Kami Keluarga Besar Himpunan Mahasiswa Sistem Informasi FMIPA UNTAN mengucapkan selamat dan sukses kepada Tim Voli Sistem Informasi yang terdiri dari :
+<br> <br>
+1. Insan Hadid - Sistem Informasi 2022 <br>
+2. Rivo Ayulga Satria- Sistem Informasi 2022 <br>
+3. Febryanto - Sistem Informasi 2022 <br>
+4. Fachri Julianda - Sistem Informasi 2022 <br>
+5. Al Haffid Ar Rasyid - Sistem Informasi 2022 <br>
+6. Audy Mastel - Sistem Informasi 2024 <br>
+7. Radika Trieza Aritonang - Sistem Informasi 2024 <br>
+8. M Fadjri Akbar - Sistem Informasi 2024 <br>
+9. M. Rafli Assidiq - Sistem Informasi 2024 <br>
+10. Derriel Mulya Ramadhan - Sistem Informasi 2025 <br>
+11. Rizqi Ikhwani - Sistem Informasi 2025 <br>
+<br> <br>
+Atas prestasinya dalam meraih Juara 2 pada lomba voli permainan rakyat Dies Natalis FMIPA UNTAN.
+<br>
+Tetap semangat! Semoga setiap langkah senantiasa membawa pada perkembangan dan pencapaian baru!</p>
+              <small class="text-muted"><i class="far fa-calendar"></i> 10 November 2025</small>
+            </div>
+          </div>
+        </div>
+
+        <!-- Berita 3 -->
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="news-card card h-100 shadow-sm">
+            <img src="assets/berita-2.png" class="card-img-top" alt="Berita 3" style="height: 220px; object-fit: cover;">
+            <div class="card-body">
+              <span class="badge bg-warning mb-2">Prestasi</span>
+              <h5 class="card-title">[DIES NATALIS FMIPA UNTAN KE-24]</h5>
+              <p class="card-text text-muted">Assalamualaikum warahmatullahi wabarakatuh, Shalom, Om Swastyastu, Namo Buddhaya, dan Salam Kebajikan!
+<br> <br> 
+Hello Great People 👋🏻
+<br> 
+Kami Keluarga Besar Mahasiswa Sistem Informasi FMIPA Untan, mengucapkan selamat memperingati Dies Natalis FMIPA ke-24. Semoga FMIPA Untan kian unggul, inovatif, dan menjadi inspirasi dalam mengembangkan ilmu pengetahuan dan teknologi.
+<br> <br> 
+Selamat merayakan momen hari jadi yang penuh makna dan kebanggaan ini! 🎉
+<br> <br> 
+#DiesNatalisFMIPAUntan <br>
+#HMSI <br>
+#Raksanara <br>
+#SistemInformasi <br>
+#GreatPeopleGreatFuture <br>
+———————————————— <br>
+Powered by Divisi Kominfo HMSI FMIPA Untan Periode 2025/2026 <br> </p>
+              <small class="text-muted"><i class="far fa-calendar"></i> 09 November 2025</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATISTIK (ANIMATED COUNTER) -->
+  <section class="counter-section py-5">
+    <div class="container">
+      <div class="row text-center text-white">
+        <div class="col-md-4 mb-4 mb-md-0" data-aos="zoom-in">
+          <div class="counter-box">
+            <i class="fas fa-users fa-3x mb-3"></i>
+            <h2 class="counter-number" data-target="344">0</h2>
+            <p class="counter-label">Mahasiswa Aktif</p>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4 mb-md-0" data-aos="zoom-in" data-aos-delay="100">
+          <div class="counter-box">
+            <i class="fas fa-user-graduate fa-3x mb-3"></i>
+            <h2 class="counter-number" data-target="149">0</h2>
+            <p class="counter-label">Alumni</p>
+          </div>
+        </div>
+
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+          <div class="counter-box">
+            <i class="fas fa-chalkboard-teacher fa-3x mb-3"></i>
+            <h2 class="counter-number" data-target="7">0</h2>
+            <p class="counter-label">Dosen</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KILAS GALERI (AUTO SCROLL CAROUSEL) -->
+  <section id="galeri" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5" data-aos="fade-up">Kilas Galeri</h2>
+      
+      <div id="galleryCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="2"></button>
+          <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="3"></button>
+        </div>
+
+        <div class="carousel-inner rounded shadow">
+          <div class="carousel-item active">
+            <img src="assets/ajar mengajar.png" class="d-block w-100" alt="Kegiatan 1" style="height: 500px; object-fit: cover;">
+            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+              <h5>Kegiatan Belajar Mengajar</h5>
+              <p>Kegiatan Belajar Mengajar di Ruang Kelas</p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="assets/infest 2025.JPG" class="d-block w-100" alt="Kegiatan 2" style="height: 500px; object-fit: cover;">
+            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+              <h5>Infest 2025</h5>
+              <p>Kegiatan Lomba LCC pada Infest 2025</p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="assets/visit.png" class="d-block w-100" alt="Kegiatan 3" style="height: 500px; object-fit: cover;">
+            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+              <h5>Kegiatan Dosen</h5>
+              <p>Benchmarking Ke Fakultas Sains dan Teknologi UNAIR</p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="assets/sig 2024.JPG" class="d-block w-100" alt="Kegiatan 4" style="height: 500px; object-fit: cover;">
+            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+              <h5>Malam Keakraban</h5>
+              <p>Cuplikan Kegiatan SIG 2024</p>
+            </div>
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOGO PARTNER -->
+  <section class="py-5">
+    <div class="container text-center">
+      <h5 class="mb-4" data-aos="fade-up">Partner & Afiliasi</h5>
+      <div class="row justify-content-center align-items-center g-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-6 col-md-3">
+          <img src="assets/kampus-merdeka.jpg" alt="Kampus Merdeka" class="img-fluid logo-partner" style="max-height: 80px; object-fit: contain;">
+        </div>
+        <div class="col-6 col-md-3">
+          <img src="assets/untan.png" alt="UNTAN" class="img-fluid logo-partner" style="max-height: 80px; object-fit: contain;">
+        </div>
+        <div class="col-6 col-md-3">
+          <img src="assets/mipa.png" alt="FMIPA" class="img-fluid logo-partner" style="max-height: 80px; object-fit: contain;">
+        </div>
+        <div class="col-6 col-md-3">
+          <img src="assets/hmsi.png" alt="HMSI" class="img-fluid logo-partner" style="max-height: 80px; object-fit: contain;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer bg-dark text-white py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mb-4 mb-md-0">
+          <div class="d-flex align-items-center mb-3">
+            <img src="assets/untan.png" alt="Logo SI" style="height: 50px; margin-right: 15px;">
+            <div>
+              <h5 class="mb-0">Program Studi Sistem Informasi</h5>
+              <small class="text-white-50">Universitas Tanjungpura</small>
+            </div>
+          </div>
+          <p class="text-white-50">
+            Fakultas Matematika dan Ilmu Pengetahuan Alam<br>
+            Universitas Tanjungpura, Pontianak
+          </p>
+        </div>
+
+        <div class="col-md-6">
+          <h5 class="mb-3">Kontak Kami</h5>
+          <p class="mb-2">
+            <i class="fas fa-map-marker-alt text-primary me-2"></i>
+            Jl. Prof. Dr. H. Nawawi - Kode Pos: 78124
+          </p>
+          <p class="mb-2">
+            <i class="fas fa-phone text-primary me-2"></i>
+            (0561) 577963
+          </p>
+          <p class="mb-0">
+            <i class="fas fa-envelope text-primary me-2"></i>
+            Sisfo@untan.ac.id
+          </p>
+        </div>
+      </div>
+
+      <hr class="my-4 bg-white">
+
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+          <p class="mb-0 small text-white-50">
+            © <span id="year">2025</span> Program Studi Sistem Informasi UNTAN. All Rights Reserved.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCROLL TO TOP -->
+  <button id="scrollTopBtn" class="btn btn-primary shadow rounded-circle" title="Kembali ke atas">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- AOS JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+  <!-- Main JS -->
+  <script src="script.js"></script>
+
+  <script>
+    // Initialize AOS
+    AOS.init({ duration: 800, once: true });
+    
+    // Set current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
